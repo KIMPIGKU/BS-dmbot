@@ -25,13 +25,13 @@ async def on_message(message):
                 try:
                     msg = message.content[4:]
                     #메시지 관리권한이 있을시 사용가능
-                    if message.author.guild_permissions.manage_messages:
+                    if message.author.id ==569477245605904384:
                         embed = discord.Embed(color=0x1DDB16, timestamp=message.created_at)
-                        embed.add_field(name="★★제목★★", value=msg, inline=True)
-                        embed.set_footer(text="★맨 밑에 들어갈 내용★")
+                        embed.add_field(name="ʙᴜʀʙᴇʀʀʏ ꜱᴇʀᴠᴇʀ 공지사항", value=msg, inline=True)
+                        embed.set_footer(text="MADE_BY_PINGKU")
                         await i.send(embed=embed)
                 except:
                     pass
 
 
-client.run('★★봇토큰★★')
+client.run('NzU4MzUzNDY3MjY5MDU0NTg1.X2tttA.vbQAcAapQniWn7iiZJc7tAfDm8Q')
